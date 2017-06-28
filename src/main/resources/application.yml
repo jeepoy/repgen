@@ -1,0 +1,19 @@
+server:
+  port: 5000
+  
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://sebnsab.c39htfyaeo4d.ap-southeast-2.rds.amazonaws.com:1433;databaseName=repgen
+    username: admin
+    password: password
+    initialize: true
+  jpa:
+    hibernate: 
+      naming-strategy: org.hibernate.cfg.DefaultNamingStrategy
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.SQLServer2008Dialect
+        show-sql: false
+  
