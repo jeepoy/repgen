@@ -34,8 +34,9 @@ public class UserController {
 	@RequestMapping(value = "/addUser/{userName}/{fullName}/{email}", method = RequestMethod.GET, produces = "application/json")
 	@ResponseBody
 	public User addUser(@PathVariable("userName") String userName, @PathVariable("fullName") String fullName, @PathVariable("email") String email  )  {
-		
+
 		return userService.addUser(userName, fullName, email);
+
 		
 	}
 	

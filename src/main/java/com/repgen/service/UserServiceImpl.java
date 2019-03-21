@@ -12,7 +12,7 @@ import com.repgen.repository.UserRepository;
 @Service("user_Service")
 public class UserServiceImpl implements UserService {
 
-	@Resource(name = "repgen_userRepository")
+	//@Resource(name = "repgen_userRepository")
 	private UserRepository userRepository;
 
 	@Override
